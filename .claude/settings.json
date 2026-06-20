@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "PowerShell(Get-Command python3, python, py -ErrorAction SilentlyContinue)",
+      "PowerShell(py --version)",
+      "PowerShell(py -c \"import PyPDF2; print\\('ok'\\)\" 2>&1)",
+      "PowerShell(py -c \"import fitz; print\\('ok'\\)\" 2>&1)",
+      "PowerShell(py -c \"import pdfplumber; print\\('ok'\\)\" 2>&1)",
+      "PowerShell(py -m pip install PyMuPDF --quiet)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\python.exe\" --version)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\pip.exe\" install pandas numpy scikit-learn matplotlib seaborn jupyter joblib --quiet)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\pip.exe\" list 2>&1)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\pip.exe\" install pandas numpy scikit-learn matplotlib seaborn jupyter joblib --timeout 120)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\pip.exe\" install pandas numpy scikit-learn matplotlib seaborn joblib --timeout 120)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\pip.exe\" install nbconvert ipykernel --quiet --timeout 120)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\jupyter.exe\" nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\Klasifikasi_Penyakit_Jantung_Logistic_Regression.ipynb\" --output \"Klasifikasi_Penyakit_Jantung_Logistic_Regression_executed.ipynb\")",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\python.exe\" -c \"import json; nb=json.load\\(open\\(r'd:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\Klasifikasi_Penyakit_Jantung_Logistic_Regression_executed.ipynb','r',encoding='utf-8'\\)\\); errors=[c.get\\('id','?'\\) for c in nb['cells'] if c['cell_type']=='code' and any\\(o.get\\('output_type'\\)=='error' for o in c.get\\('outputs',[]\\)\\)]; print\\('Errors in cells:', errors if errors else 'NONE'\\)\")",
+      "Bash(venv/Scripts/python.exe -c ' *)",
+      "PowerShell(Remove-Item \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\Klasifikasi_Penyakit_Jantung_Logistic_Regression_executed.ipynb\" -Confirm:$false)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\pip.exe\" list)",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\jupyter.exe\" nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 --inplace \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\Klasifikasi_Penyakit_Jantung_Logistic_Regression.ipynb\")",
+      "PowerShell(& \"d:\\\\Project\\\\produk-digital\\\\klasifikasi-penyakit-jantung-dengan-logistic-regression\\\\venv\\\\Scripts\\\\pip.exe\" install jupyter --quiet --timeout 120)"
+    ]
+  }
+}
